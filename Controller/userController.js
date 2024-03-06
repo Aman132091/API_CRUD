@@ -6,7 +6,7 @@ const jwt = require('jsonwebtoken')
 
 
 const home = async(req,res)=>{
-    res.send('hello world')
+    res.send('this is automating using CI/CD')
 }
 
 
