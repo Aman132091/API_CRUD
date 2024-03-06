@@ -6,10 +6,11 @@ const middleware = require('../Middleware/middleware')
 // const app = express()
 
 router.use('/readuser',middleware)
+
 // router.use('/updateusername',middleware)
 // router.use('/updateemail',middleware)
 
-
+router.get('/home',userController.home)
 router.post('/signup',userController.signup)
 router.post('/signin',userController.signin)
 router.get('/readuser',userController.readUser)

@@ -5,6 +5,11 @@ const bcryptjs = require('bcryptjs')
 const jwt = require('jsonwebtoken')
 
 
+const home = async(req,res)=>{
+    res.send('hello world')
+}
+
+
 const signup = async(req,res)=>{
     const {username,email,password} = req.body
     
@@ -176,4 +181,4 @@ const deleteUser = async(req,res)=>{
 }
 
 
-module.exports = {signup,signin,readUser,updateUsername,updateEmail,updatePassword,deleteUser}
+module.exports = {signup,signin,readUser,updateUsername,updateEmail,updatePassword,deleteUser,home}
